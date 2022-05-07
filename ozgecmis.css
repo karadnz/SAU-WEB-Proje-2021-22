@@ -1,0 +1,41 @@
+html,body{
+
+    height: 100%;
+    font-size: 1rem;
+}
+
+
+
+
+
+.gradient{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(121,9,103,1) 70%, rgba(25,2,45,1) 100%); 
+}
+
+.page-header{
+    padding-top:4rem;
+}
+.page-header,.feature{
+    
+    font-size: 1.25rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-size: 1.25rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feature ul{
+    
+    list-style-image: url(../img/book.svg);
+}
+
+.feature ul li{
+    padding-left: 1.25rem;
+    list-style-image: url(img/book.svg);
+    
+}
