@@ -8,3 +8,35 @@ body{
     margin-bottom: 5rem;
 }
 
+
+p{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.carousel-caption>p{
+
+    color:white;
+    font-size: 2rem;
+    display: none;
+}
+
+.carousel-caption>h5{
+
+    color:white;
+    font-size: 2rem;
+    text-shadow: 4px 3px 0 #7A7A7A;
+}
+
+
+.justify-self-end{
+    justify-self: end;
+}
+
+
+.my-5{
+
+    margin-top: 5rem;
+
+}
+
