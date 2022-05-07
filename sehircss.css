@@ -29,14 +29,14 @@ p{
 }
 
 
-.justify-self-end{
-    justify-self: end;
+.miras{
+    padding: 4rem;
 }
 
-
-.my-5{
-
-    margin-top: 5rem;
-
+section{
+    margin-bottom: 5rem;
 }
 
+section p{
+    margin-top:2.5rem;
+}
