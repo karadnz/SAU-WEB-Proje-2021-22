@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="form.css">
     
     
-    
 </head>
 <body>
     
@@ -23,7 +22,7 @@
 
     <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
           <div class="container justify-content-end">
-            <a class="navbar-brand" href="#">Yer tutucu</a>
+            <a class="navbar-brand" href="login.html">Giriş</a>
       
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       
@@ -34,15 +33,15 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div class="navbar-nav">
 
-                <a class="nav-link " aria-current="page" href="hakkinda.html">Hakkinda</a>
+                <a class="nav-link active" aria-current="page" href="hakkinda.html">Hakkinda</a>
 
                 <div class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="mirasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Şehirim
                   </a>
                   <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="mirasDropdown">
-                    <li><a class="dropdown-item" href="trabzon.html">Trabzon</a></li>
-                    <li><a class="dropdown-item" href="miras.html">Miras</a></li>
+                    <li><a class="dropdown-item" href="#">Trabzon</a></li>
+                    <li><a class="dropdown-item" href="#">Miras</a></li>
                     <li><a class="dropdown-item" href="#">Trabzonspor</a></li>
                   </ul>
 
@@ -63,70 +62,34 @@
           </div>
     </nav>
 
-    <div class="container my-5 kutu">
-
-
-    <h4 class="my-5 fw-bold text-center">Form Bilgileri:</h4>
-
-        <ul>
-            <li>
-                <p class="fw-bold text-decoration-underline">İsim:</p>
-                <p> <?php echo $_GET["isim"]?> </p>
-
-            </li>
-
-            <li>
-                <p class="fw-bold text-decoration-underline">E-mail:</p>
-                <p><?php echo $_GET["email"]?></p>
-
-            </li>
-
-            <li>
-                <p class="fw-bold text-decoration-underline">Şehiriniz:</p>
-                <p><?php echo $_GET["sehir"]?></p>
-
-            </li>
-
-            <li>
-                <p class="fw-bold text-decoration-underline">Adresiniz:</p>
-                <p><?php echo $_GET["adres"]?></p>
-
-            </li>
-
-            <li>
-                <p class="fw-bold text-decoration-underline">Yaşınız:</p>
-                <p><?php echo $_GET["yas"]?></p>
-
-            </li>
-
-            <li>
-                <p class="fw-bold text-decoration-underline">Mesajınız:</p>
-                <p><?php echo $_GET["msj"]?></p>
-
-            </li>
-
-            <li>
-                <p class="fw-bold text-decoration-underline">E-Posta bültenine katılmayı:</p>
-                <p><?php 
-                    if(isset($_GET["bulten"])){echo "kabul ettiniz";}
-                    else{echo "kabul etmediniz";}
-                
-                
-                ?></p>
-
-            </li>
-
-            
-
-        </ul>
-
-        
-
-        
-    </div>
-
-
     
+
+
+    <div class="container my-5 p-5 kutu">
+
+        <h4 class="my-5 fw-bold text-center">Giriş</h4>
+
+        <p>
+            <?php 
+                if($_POST["kullaniciAd"]=="g211210066@sakarya.edu.tr"&&$_POST["sifre"]=="g211210066")
+                {
+                    echo "Hosgeldiniz ";
+                    echo $_POST["sifre"];
+                    echo "!";
+                }
+
+                else{
+                    echo "basarisiz";
+                    header("Location: /login.html");exit;
+                }
+
+            ?>
+        </p>
+
+        
+
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
