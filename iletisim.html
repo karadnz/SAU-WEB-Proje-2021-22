@@ -49,7 +49,7 @@
       
                 </div>
       
-                <a class="nav-link " aria-current="page" href="ozgecmis.html">Özgeçmiş</a>
+                <a class="nav-link " aria-current="page" href="ozgecmis2.html">Özgeçmiş</a>
                 <a class="nav-link active " aria-current="page" href="iletisim.html">İletişim</a>
       
       
@@ -68,82 +68,83 @@
 
             <h1 class="display-2 baslik">İletişim</h1>
 
-        <form class="row g-3 mb-5">
+        <form class="row g-3 mb-5" action="form.php" method="get">
 
             
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
               
             </div>
             
             <div class="col-md-6">
               <label for="inputPassword4" class="form-label" >İsim:</label>
-              <input type="text" class="form-control" id="inputPassword4" placeholder="Ad Soyad">
+              <input type="text" class="form-control" id="inputPassword4" placeholder="Ad Soyad" name="isim">
             </div>
 
             <div class="col-12">
                 <label for="inputTextarea1" class="form-label">Mesajınız:</label>
-                <textarea class="form-control" id="inputTextarea1" rows="6" placeholder="Mesajınız.."></textarea>
+                <textarea class="form-control" id="inputTextarea1" rows="6" placeholder="Mesajınız.." name="msj"></textarea>
               </div>
             
             <div class="col-md-4">
               <label for="inputSehir" class="form-label">Şehir:</label>
-              <select id="inputSehir" class="form-select">
-                <option selected>Şehir seçiniz</option>
-                <option>İstanbul</option>
-                <option>Ankara  </option>
-                <option>İzmir   </option>
-                <option>Kocaeli </option>
-                <option>Sakarya </option>
-                <option>Trabzon </option>
-                <option>Diğer   </option>
+              <select id="inputSehir" class="form-select" name="sehir">
+                <option selected  value="belirtilmedi">Şehir seçiniz</option>
+                <option value="İstanbul">İstanbul</option>
+                <option value="Ankara">Ankara  </option>
+                <option value="İzmir">İzmir   </option>
+                <option value="Kocaeli">Kocaeli </option>
+                <option value="Sakarya">Sakarya </option>
+                <option value="Trabzon">Trabzon </option>
+                <option value="Diger">Diğer   </option>
               </select>
             </div>
+
             <div class="col-md-8">
               <label for="inputAdres" class="form-label">Adres:</label>
-              <input type="text" class="form-control" id="inputAdres">
+              <input type="text" class="form-control" id="inputAdres" name="adres">
             </div>
 
             <div class="col-md-12">
                 <label for="form-label:">Yaş:</label>
                 <div class="form-check">
-                    <input type="radio" class=" form-check-input" id="0-18" name="fav_language" value="0">
+                    <input type="radio" class=" form-check-input" id="0-18" name="yas" value="0-18">
                     <label for="0-18" class="form-check-label">0-18</label>
                 </div>
 
                 <div class="form-check">
-                    <input type="radio" class=" form-check-input" id="18-30" name="fav_language" value="18">
+                    <input type="radio" class=" form-check-input" id="18-30" name="yas" value="18-30">
                     <label for="18-30" class="form-check-label">18-30</label>
                 </div>
 
                 <div class="form-check">
-                    <input type="radio" class=" form-check-input" id="30+" name="fav_language" value="30">
+                    <input type="radio" class=" form-check-input" id="30+" name="yas" value="30+">
                     <label for="30+" class="form-check-label">30+</label>
                 </div>
 
             </div>
             
 
-            <div class="col-md-4">
-                <label for="formFile" class="form-label">Eklemek istediğiniz dosya</label>
-                <input class="form-control" type="file" id="formFile">
-              </div>
+            
 
             <div class="col-12">
 
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
+                <label class="form-check-label" for="gridCheck" name="bulten">
                   E-posta bültenine katılmak istiyorum.
                 </label>
               </div>
 
             </div>
 
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary">Gönder</button>
+            
+
+            <div class="col-md-12">
+            <button class="btn btn-primary" type="submit">Gönder</button>
             </div>
+            
 
           </form>
 
