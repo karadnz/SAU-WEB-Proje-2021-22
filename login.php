@@ -71,7 +71,7 @@
 
         <p>
             <?php 
-                if($_POST["kullaniciAd"]=="g211210066@sakarya.edu.tr"&&$_POST["sifre"]=="g211210066")
+                if($_POST["sifre"]=="g211210066"&&$_POST["kullaniciAd"]=="g211210066@sakarya.edu.tr")
                 {
                     echo "Hosgeldiniz ";
                     echo $_POST["sifre"];

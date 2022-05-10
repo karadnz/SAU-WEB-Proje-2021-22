@@ -68,12 +68,12 @@
 
             <h1 class="display-2 baslik">İletişim</h1>
 
-        <form class="row g-3 mb-5" action="form.php" method="get">
+        <form name="iletisimForm" onsubmit="return validateForm()" class="row g-3 mb-5" action="form.php" method="get">
 
             
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Email" name="email">
               
             </div>
             
@@ -90,7 +90,7 @@
             <div class="col-md-4">
               <label for="inputSehir" class="form-label">Şehir:</label>
               <select id="inputSehir" class="form-select" name="sehir">
-                <option selected  value="belirtilmedi">Şehir seçiniz</option>
+                <option selected  value="0">Şehir seçiniz</option>
                 <option value="İstanbul">İstanbul</option>
                 <option value="Ankara">Ankara  </option>
                 <option value="İzmir">İzmir   </option>
@@ -161,7 +161,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+        <script src="iletisim.js"></script>
     
 </body>
 
