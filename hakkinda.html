@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body onload="bilgi()">
 
 
 
@@ -72,23 +72,34 @@
     <div class="container">
 
       <h1>İlgi Alanlarım<h1>
-        <ul>
-          <li><p>Formula 1</p></li>
-          <li><p>Futbol</p></li>
-          
-        </ul>
+          <ul>
+            <li>
+              <p>Formula 1</p>
+            </li>
+            <li>
+              <p>Futbol</p>
+            </li>
+
+          </ul>
     </div>
 
-    <div id="wg-api-football-standings"
+
+    <div class="container f1" id="f1Kutu" >
+
+      <p>API yükleniyor</p>
+
+    </div>
+
+    <!-- <div id="wg-api-football-standings"
      data-host="api-football-v1.p.rapidapi.com""
      data-league="203"
      
      data-team=""
      data-season="2021"
-     data-key="/ 523fe89f78msh112d292d874686fp1d1d19jsn684f8381bf6b"
+     data-key="523fe89f78msh112d292d874686fp1d1d19jsn684f8381bf6b"
      data-theme="dark"
      data-show-errors="false"
-     class="api_football_loader"></div>
+     class="api_football_loader"></div> -->
 
 
 
@@ -103,7 +114,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-  <script src="script.js"></script>
+  
   <script src="hakkinda.js"></script>
 </body>
 
