@@ -20,7 +20,9 @@ function bilgi (){
             console.log(responseJson.MRData.StandingsTable.StandingsLists[0].ConstructorStandings[0].wins);
 
 
-            ic=` <table class="table table-striped">
+            ic=` 
+            <h1 class="my-3">F1 2022 Sezonu</h1>
+            <table class="table table-striped table-hover">
 
             <thead>
             
@@ -42,7 +44,7 @@ function bilgi (){
 
                 ic+=`   <tr>
                 <th scope="row">${sira}</th>
-                <td>${takim.Constructor.name}</td>
+                <td><a href="${takim.Constructor.url}" class="link-dark">${takim.Constructor.name}</a></td>
                 <td>${takim.Constructor.nationality}</td>
                 <td>${takim.points}</td>
                 <td>${takim.wins}</td>

@@ -12,7 +12,7 @@
 
 
   <link rel="stylesheet" href="sehircss.css">
-  <link rel="stylesheet" href="widget/api-football.css">
+  
   <link rel="stylesheet" href="hakkinda.css">
 
 
@@ -25,7 +25,10 @@
 
   <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
     <div class="container justify-content-end">
-      <a class="navbar-brand" href="#">Yer tutucu</a>
+
+      <button type="button" class="btn btn-outline-success fw-bold " data-bs-toggle="modal" data-bs-target="#myModal">
+        Giriş Yap
+      </button>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,24 +72,22 @@
 
   <div class="container kutu">
 
-    <div class="container">
+    <div class="container golge">
 
-      <h1>İlgi Alanlarım<h1>
-          <ul>
-            <li>
-              <p>Formula 1</p>
-            </li>
-            <li>
-              <p>Futbol</p>
-            </li>
-
-          </ul>
+      <h1 class="ms-3">İlgi alanlarım</h1>
+      <ul>
+        <li>Film</li>
+        <li>Kitap</li>
+        <li>Seyahat</li>
+        <li>F1</li>
+      </ul>
+      
     </div>
 
+    
+    <div class="container golge my-5" id="f1Kutu" >
 
-    <div class="container f1" id="f1Kutu" >
-
-      <p>API yükleniyor</p>
+      
 
     </div>
 
@@ -103,6 +104,58 @@
 
 
 
+  </div>
+
+
+
+
+
+
+
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Giriş yap</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="container-fluid">
+
+            <form class="row gy-5" action="login.php" method="post" onsubmit="linkEkle()">
+
+              <div class="col-md-12">
+                  <label for="kullaniciad" class="form-label">Öğrenci E-mail:</label>
+                  <input type="text" class="form-control" id="kullaniciad" placeholder="g211210066@sakarya.edu.tr" name="kullaniciAd" required>
+                
+              </div>
+              
+              <div class="col-md-12">
+                <label for="sifre" class="form-label" >Öğrenci No:</label>
+                <input type="password" class="form-control" id="sifre" placeholder="g211210066" name="sifre" required>
+              </div>
+
+              <input type="checkbox" style="display:none" id="geriLink" checked value="">
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <button class="btn btn-primary" type="submit">Giriş yap</button>
+
+              </div>
+
+              
+
+          </form>
+
+            
+          </div>
+        </div>
+       
+      </div>
+    </div>
   </div>
 
 

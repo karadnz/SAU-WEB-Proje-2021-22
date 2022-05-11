@@ -25,7 +25,10 @@
 
   <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
     <div class="container justify-content-end">
-      <a class="navbar-brand" href="#">Yer tutucu</a>
+
+      <button type="button" class="btn btn-outline-success fw-bold " data-bs-toggle="modal" data-bs-target="#myModal">
+        Giriş Yap
+      </button>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,13 +50,13 @@
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="mirasDropdown">
               <li><a class="dropdown-item" href="trabzon.html">Trabzon</a></li>
               <li><a class="dropdown-item" href="miras.html">Miras</a></li>
-              <li><a class="dropdown-item" href="#">Trabzonspor</a></li>
+              
             </ul>
 
           </div>
 
           <a class="nav-link " aria-current="page" href="ozgecmis2.html">Özgeçmiş</a>
-          <a class="nav-link " aria-current="page" href="iletisim.html">İletişim</a>
+          <a class="nav-link " aria-current="page" href="iletisim2.html">İletişim</a>
 
 
 
@@ -316,6 +319,59 @@
 
 </section>
 
+
+
+
+
+
+
+
+
+   <!-- Modal -->
+   <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Giriş yap</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="container-fluid">
+
+            <form class="row gy-5" action="login.php" method="post" onsubmit="linkEkle()">
+
+              <div class="col-md-12">
+                  <label for="kullaniciad" class="form-label">Öğrenci E-mail:</label>
+                  <input type="text" class="form-control" id="kullaniciad" placeholder="g211210066@sakarya.edu.tr" name="kullaniciAd" required>
+                
+              </div>
+              
+              <div class="col-md-12">
+                <label for="sifre" class="form-label" >Öğrenci No:</label>
+                <input type="password" class="form-control" id="sifre" placeholder="g211210066" name="sifre" required>
+              </div>
+
+              <input type="checkbox" style="display:none" id="geriLink" checked value="">
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                <button class="btn btn-primary" type="submit">Giriş yap</button>
+
+              </div>
+
+              
+
+          </form>
+
+            
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
 
 
 
