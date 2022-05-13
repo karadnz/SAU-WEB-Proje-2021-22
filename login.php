@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Giriş</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div class="navbar-nav">
 
-                <a class="nav-link active" aria-current="page" href="hakkinda.html">Hakkinda</a>
+                <a class="nav-link " aria-current="page" href="hakkinda.html">Hakkinda/İlgi alanlarım</a>
 
                 <div class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="mirasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

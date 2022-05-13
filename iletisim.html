@@ -10,13 +10,13 @@
 
 
     <link rel="stylesheet" href="sehircss.css">
-    <title>Forms</title>
+    <title>İletişim</title>
     
 </head>
 
 <body>
 
-    <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Sumela_From_Across_Valley.JPG/1920px-Sumela_From_Across_Valley.JPG"
+    <img class="img-fluid" src="img/arkaplanSumela.JPG"
         alt="" >
 
 
@@ -155,6 +155,52 @@
         
 
 
+
+
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Giriş yap</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+      
+                <div class="container-fluid">
+      
+                  <form class="row gy-5" action="login.php" method="post" onsubmit="linkEkle()">
+      
+                    <div class="col-md-12">
+                        <label for="kullaniciad" class="form-label">Öğrenci E-mail:</label>
+                        <input type="text" class="form-control" id="kullaniciad" placeholder="g211210066@sakarya.edu.tr" name="kullaniciAd" required>
+                      
+                    </div>
+                    
+                    <div class="col-md-12">
+                      <label for="sifre" class="form-label" >Öğrenci No:</label>
+                      <input type="password" class="form-control" id="sifre" placeholder="g211210066" name="sifre" required>
+                    </div>
+      
+                    <input type="checkbox" style="display:none" id="geriLink" checked value="">
+      
+                    <div class="modal-footer">
+      
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                      <button class="btn btn-primary" type="submit">Giriş yap</button>
+      
+                    </div>
+      
+                    
+      
+                </form>
+      
+                  
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
 
 
 

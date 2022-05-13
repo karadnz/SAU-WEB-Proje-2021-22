@@ -21,7 +21,7 @@ function bilgi (){
 
 
             ic=` 
-            <h1 class="my-3">F1 2022 Sezonu</h1>
+            <h1 class="ms-3">F1 Takım Sıralamaları(API)</h1>
             <table class="table table-striped table-hover">
 
             <thead>
